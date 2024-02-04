@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="b436e67d-04a1-49c1-ace4-6af0d5b3c82f" kpf_version="5" name="archivos-planos.komodoproject">
+<preference-set idref="b436e67d-04a1-49c1-ace4-6af0d5b3c82f" id="project" preftype="project">
+  <long id="prefs_version">1</long>
+<preference-set id="unittest-configs">
+<preference-set id="{065db286-3355-41be-a4ad-8edf27b5d172}">
+  <string id="command">prove -vlrfm --normalize --nocolor</string>
+  <string id="handler">prove</string>
+  <string id="name">prueba1</string>
+  <string id="parser">tap</string>
+  <string relative="path" id="path">t</string>
+  <string id="saveTo">project</string>
+</preference-set>
+</preference-set>
+</preference-set>
+</project>
