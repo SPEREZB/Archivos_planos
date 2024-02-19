@@ -36,6 +36,16 @@ post '/guardar' => sub {
     my $file_name = request->body_parameters->{'nombre_archivo'};
     my $file_type = request->body_parameters->{'tipo_archivo'};
 
+    # VERIFICAR SI SE PROPORCIONÓ UN NOMBRE PARA EL ARCHIVO  
+    unless ($file_name) {
+        return template 'index', { content => $content, mensaje => "Error: Debes proporcionar un nombre de archivo." };
+    }
+
+    # VERIFICAR SI HAY CONTENIDO EN EL ARCHIVO
+    unless ($content) {
+        return template 'index', { content => $content, mensaje => "Error: El archivo está vacío. Por favor, proporciona contenido." };
+    }
+
     # COMPROBAR SI SE ESCOGIÓ 'txt' o 'csv'
     if ($file_type eq "txt") { 
         $file_name .= ".txt";
