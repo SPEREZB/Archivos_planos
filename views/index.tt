@@ -15,7 +15,7 @@
         <div class="file-upload">
             <form action="/" method="post" enctype="multipart/form-data">
                 <label id="custom-file" class="custom-file-upload">
-                    <input type="file" name="archivo" accept=".txt" style="display: none;" onchange="updateFileName(this)">
+                    <input type="file" name="archivo" accept=".txt, .csv" style="display: none;" onchange="updateFileName(this)">
                     <span id="select-file-text">Seleccionar archivo</span>
                     <span id="file-name" style="display:none;"></span>
                 </label>
